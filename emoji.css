@@ -1,0 +1,27 @@
+.face{
+	width: 200px;height: 200px;background: cyan;border-radius: 50%;position: absolute;
+
+top:50%;left: 50%;transform: translate(-50%,-50%);
+}
+.eyes:before,.eyes:after{
+	width:30px;height: 30px;background-color: black;position: absolute;content: "";top:30%;border-radius: 50%;/*transition: 0.5s;
+*/
+}
+
+.eyes:before{
+	left:25%;
+}
+.eyes:after{
+	right:25%;
+}
+
+.mouth{
+	width:50%;height: 10px;background: black;bottom: 30%;position: absolute;/*transform: translate(50%);or*/ left: 25%;
+}
+
+.face:hover .eyes:before,.face:hover .eyes:after{
+	content: "^";background-color: transparent;font-size: 60px;
+}
+ .face:hover .mouth{
+	border-radius: 50px;
+}
